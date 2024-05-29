@@ -1,0 +1,14 @@
+.env
+*.war
+takserver-*.zip
+tak/
+investigation/
+originalWAR/
+chatbot/
+server.pref
+manifest.xml
+# Ignore all files in lets_encrypt folder
+lets_encrypt/*
+# Except the folder itself and the .gitkeep file
+!lets_encrypt/
+!lets_encrypt/.gitkeep
