@@ -89,8 +89,8 @@ fi
 ### Check if required ports are in use by anything other than docker
 netstat_check () {
         printf $warning "\nSTATUS: Performing a check if required ports are free.."
-        # Feel free to remove port 80 if you generated the `Let's Encrypt` certificate some otherway
-	ports=(5432 8089 8443 8444 8446 9000 9001 80)
+        # Feel free to add port 80 if you're gonna use HTTP challenge for "Let's Encrypt"
+	ports=(5432 8089 8443 8444 8446 9000 9001)
 
 	for i in ${ports[@]};
 	do
